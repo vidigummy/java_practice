@@ -34,6 +34,8 @@ public class TestController {
 
     @RequestMapping(value="/input", method=RequestMethod.POST)
     public SomeData requestMethodName(@RequestParam String param) {
+        System.out.println("hi");
+        return "input.html";
     }
     
 }
